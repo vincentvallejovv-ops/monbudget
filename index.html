@@ -1554,6 +1554,18 @@ class BudgetApp {
 
 let app;
 document.addEventListener("DOMContentLoaded",()=>{app=new BudgetApp();});
+
+// Enregistrement du service worker pour PWA
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js')
+      .catch(err => {
+        console.log('SW registration failed', err);
+      });
+  });
+}
 </script>
 </body>
 </html>
+
+
