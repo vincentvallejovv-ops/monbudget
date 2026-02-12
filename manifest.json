@@ -1,7 +1,7 @@
 {
   "name": "MonBudget Multi Profils",
   "short_name": "MonBudget",
-  "start_url": "budgetapp-pro.html",
+  "start_url": "/monbudget/",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#2563EB",
@@ -18,3 +18,4 @@
     }
   ]
 }
+
